@@ -10,17 +10,16 @@ const ItemDetailContainer = () => {
     const {itemId} = useParams()
     useEffect(() => {
         getProductsById(itemId)
-            .then(res => { setProduct(res) })
-           
+            .then(product => { setProduct(product) })
            
             .catch(error => {
                 console.log(error)
             })
     }, [itemId])
     return (
-    
-    <div>
-        <ItemDetail {...data} />
+        
+    <div><h1>Detalle de Producto</h1>
+        <ItemDetail {...product} />
     </div>)}
 
 export default ItemDetailContainer

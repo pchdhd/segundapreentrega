@@ -9,14 +9,14 @@ import ItemDetailContainer from './components/ItemDetailContent/ItemDetailConten
 function App(){
 
 	return (
-		<>
+		<div className='div-Root'>
       <BrowserRouter>
         <Navbar />
         <Routes><Route path='/' element={<ItemListContainer greeting={'Listado de todos los productos'} />}></Route>
           <Route path='/item/:itemId' element={<ItemDetailContainer/> }></Route>
         </Routes>
       </BrowserRouter>
-		</>
+		</div>
 	);
 }
 

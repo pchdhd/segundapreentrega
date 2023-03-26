@@ -1,3 +1,6 @@
+body{
+  background-color: gainsboro;
+}
 figure{
   width: 80px;
   height: 180px;
@@ -8,10 +11,17 @@ figure img{
   
 }
 .item{
-  width: 217px;
-  height: 333px;
+  margin-top: 10px;
+  width: 210px;
+  height: 349px;
   border: 3px solid black;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 4px;
+  box-shadow: black 3px 3px 5px ;
+  background-color: rgb(226, 225, 225);
+  display: grid;
+  place-items: center;
 }
 h2{
   font-size: 17px;
@@ -21,23 +31,23 @@ h2{
 }
 .div-h2 h2{
   font-size: 17px;
+margin: 2px;
 }
 .link-detalles{
   text-decoration: none;
- 
   color: white;
-  
 }
 .div-link{
   display: flex;
   justify-content: center;
-  width: 217px;
+  width: 210px;
+  height: 34px;
   background-color: black;
 }
 h3 {
-  margin-left: 10px;
-  font-size: 10px;
+  font-size: 13px;
   color: red;
+  margin-left: 40px;
 }
 header{
   height: 60px;
@@ -45,8 +55,18 @@ header{
   align-items: center;
   border-bottom: 1px grey solid;
   margin-bottom: 26px;
+  background-color: antiquewhite;
 }
 .container-icon img{
-margin-left: 1000px;
-
+margin-top: 18px;
 }
+span{
+  margin-left: 430px;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 4px 4px 21px rgb(104, 118, 167);
+}
+.container-icon span{
+  margin-left: 1000px;
+}
+
